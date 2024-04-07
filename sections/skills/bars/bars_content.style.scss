@@ -1,0 +1,155 @@
+progress {
+  width: 40vw;
+  height: 1.4vw;
+  position: relative;
+  border-radius: 1vw;
+}
+*{
+  margin:0;
+  padding: 0;
+  font-size: 2vw;
+  overflow: hidden;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------------------- VARS TEMATHIC -----------------------------*/
+:root{
+
+  
+/* BG COLORS TEMATHIC*/
+  --bg_frontEnd: linear-gradient(to left, #0095ff, #0026ff);
+  --bg_backEnd: linear-gradient(to left, #ff9900, #ff2a00);
+  --bg_softSkill: linear-gradient(to left, #ff00d9, #ff0000); 
+  --bg_hardSkill: linear-gradient(to left, #00fbff, #c3ff00);
+  --bg_english: linear-gradient(to left, #eaff00, #88ff00); 
+
+/* COLORS TEXT TEMATHIC*/
+--frontEnd:  #64a2ce;
+--backEnd:  #ff9900;
+--softSkill:  #c3ff00;
+--hardSkill:  #ff0000;
+--english:  #eaff00;
+/* BORDER PROGRESS SIZE*/
+  --borderSize: 1vw;
+}
+/* ----------------------------- CLASS COLORS -----------------------------*/
+.Front-end{
+  color: var(--frontEnd);
+}
+.Back-end{
+  color: var(--backEnd);
+}
+.Soft-skill{
+  color: var(--softSkill);
+}
+.Hard-skill{
+  color: var(--hardSkill);
+}
+.English{
+  color: var(--english);
+}
+
+/* ----------------------------- SECTION GRID -----------------------------*/
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+
+  height: 100vh;
+  
+  
+}
+/* -----------------------------  BAR CONFIG -----------------------------*/
+
+/* GRID BARS */ 
+.container-group-bars {
+  overflow:visible;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr); 
+  transform: translateX(-6%) scale(1.2);
+  height: 75vh;
+  
+}
+
+/* BAR AND IMG POSITION */
+.bars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(12vw, 9vw)); 
+  grid-template-rows: auto;
+ 
+ 
+}
+/* ----------------------------- PROGRESS POSITION -----------------------------*/
+.bars:nth-child(1){
+  transform: translateY(100%) translateX(40%);
+}
+.bars:nth-child(2){
+  transform: translateY(100%) translateX(25%);
+}
+.bars:nth-child(3){
+  transform: translateY(100%) translateX(17%);
+}
+.bars:nth-child(4){
+  transform: translateY(100%) translateX(25%);
+}
+.bars:nth-child(5){
+  transform: translateY(100%) translateX(40%);
+}
+
+/* ----------------------------- TITLE  AND VALUE -----------------------------*/
+.title-skill{
+
+  letter-spacing: 2px;
+ 
+}
+.value-skill{
+  color: #cacaca;
+}
+
+/* ----------------------------- PROGRESS BAR -----------------------------*/
+progress::-webkit-progress-bar {
+  background-color: #eeeeee48;
+  border-radius: 1vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+progress::-webkit-progress-value {
+  background-color: #cb28f481;
+  border-radius: var(--borderSize);
+}
+.Front-End::-webkit-progress-value{
+ background-image: var(--bg_frontEnd); 
+  border-radius: var(--borderSize);
+}
+.Back-End::-webkit-progress-value{
+  background-image: var(--bg_backEnd); 
+  border-radius: var(--borderSize);
+}
+.Hard-Skill::-webkit-progress-value{
+  background-image: var(--bg_softSkill); 
+  border-radius: var(--borderSize);
+}
+.Soft-skill::-webkit-progress-value{
+  background-image: var(--bg_hardSkill); 
+  border-radius: var(--borderSize);
+}
+.English::-webkit-progress-value{
+  background-image: var(--bg_english); 
+  border-radius: var(--borderSize);
+}
+/* ----------------------------- IMG BAR -----------------------------*/
+.avatar{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  height: auto; 
+  border-radius: 50%;
+  transform: translateX(2%) ;
+  z-index: 1; /* Ajusta el índice Z para que la imagen esté por encima de los elementos de barra */
+}

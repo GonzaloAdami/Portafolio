@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./contact_style.css">
+  <title>Gonzalo Adami</title>
+  <link rel="icon" type="image/x-icon" href="./img/icon.png">
+  <style>
+   
+  </style>
+</head>
+<body data-basepath="../../Assets/">
+
+  <nav data-aos="fade-down">
+    <ul> 
+        <li class="list select"><a href=""> ABOUT</a></li>     
+        <li class="list" tabindex="1"><a href="index2.html">PROYECTS</a></li>
+        <li class="list"> <a href="index3.html">SKILLS</a></li>
+       <li class="list"> <a href="index4.html">CONTACT <div class="hr"></div></a></li>
+    </ul>
+  
+  </nav>
+
+  <section class="banner">
+    <div class="data" 
+    data-aos="fade-up"
+     data-aos-easing="linear"
+    data-aos-duration="800">
+      <p>DATES</p>
+      <div class="dataBox">
+        <p data-aos="zoom-out"  data-aos-delay="1000">PHONE</p>
+        <p class="icon" data-aos="zoom-out"  data-aos-delay="1200">+54 9 11 36255370</p>
+        <p data-aos="zoom-out"  data-aos-delay="1400">EMAIL</p>
+        <p class="icon" data-aos="zoom-out"  data-aos-delay="1800">gonzaloadamie@gmail.com</p>
+        <p data-aos="zoom-out"  data-aos-delay="2000">LOCATION</p>
+        <p class="icon" data-aos="zoom-out"  data-aos-delay="2200">Argentina, Buenos aires</p>
+        <p data-aos="zoom-out"  data-aos-delay="2400">REDES</p>
+       <a  href="https://www.linkedin.com/in/gonzaloadami/" target="_blank" > <p class="icon" data-aos="zoom-out" data-aos-delay="2700">Linkedin</p></a>
+      </div> 
+    </div>
+    <div class="name">
+      <h1 data-aos="fade-up"
+      data-aos-anchor-placement="center-center"
+      data-aos-duration="1500" data-aos-delay="2600">Gonzalo</h1>
+      <h2 data-aos="fade-up"
+      data-aos-anchor-placement="center-center"
+      data-aos-duration="2000" data-aos-delay="2600">Ezequiel</h2>
+      <h3 data-aos="fade-up"
+      data-aos-anchor-placement="center-center"
+      data-aos-duration="2500" data-aos-delay="2600">Adami</h3>
+    </div>
+
+    <img src="../../Assets/person.webp" data-src="person.webp" alt="" data-aos="zoom-out" data-aos-delay="2000" data-aos-duration="1500">
+    <div class="message">
+      <h4 data-aos="fade-right" data-aos-duration="2500" data-aos-delay="2600">Contact me for an</h4>
+      <h5 data-aos="fade-right" data-aos-duration="2500" data-aos-delay="2900">interview!</h5>
+    </div>
+   <div class="form" data-aos="fade-up"
+   data-aos-duration="1500">
+   <form action="https://formsubmit.co/gonzaloadamie@gmail.com" method="post">
+    <div class="containerFormInput">
+      <label for="nombre">Nombre:</label>
+      <input placeholder="Nombre" type="text" id="nombre" name="name" required><br>
+    </div>
+    <div class="containerFormInput">
+     <label for="correo">Email:</label>
+      <input placeholder="Email" type="email" id="correo" name="email" required><br>
+    </div>
+    <div>
+      <label for="comentario" class="comentTitle">Comentario:</label><br>
+      <textarea placeholder="¿Cual es tu motivo?" id="comentario" name="subject" rows="3" cols="40" required></textarea><br>
+      <input  type="submit" value="Enviar" class="buttonForm">
+    </div>
+   <input type="hidden" name="_next" value="http://127.0.0.1:3000/200ok.html">
+</form>
+   </div>
+  </section>
+
+ 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    // Inicializa el carrusel
+    $(document).ready(function(){
+      $("#carousel").owlCarousel({
+        items: 7, // Número de elementos visibles en el carrusel
+        loop: true, // Repetir el carrusel en un bucle
+        autoplay: true, // Reproducir automáticamente el carrusel
+        autoplayTimeout: 3000, // Tiempo de espera entre las transiciones de los elementos (en milisegundos)
+        autoplayHoverPause: true, // Pausar el carrusel al pasar el cursor sobre él
+        responsive: {
+          // Configuraciones específicas para diferentes tamaños de pantalla
+          0: { items: 7 },
+          768: { items: 6 },
+          992: { items: 6 }
+        }
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Detectar clic en el enlace del <li> con clase "list"
+    const links = document.querySelectorAll(".list a");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        // Agregar la clase de animación para desvanecer los elementos
+        document.body.classList.add("fadeOutAnimation");
+
+        // Esperar a que termine la animación antes de redirigir a la página
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 1000); // Ajusta el tiempo según la duración de la animación (en este caso, 1000 ms = 1 segundo)
+      });
+    });
+  </script>
+</body>
+</html>

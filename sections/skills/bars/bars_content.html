@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="./bars_content.style.scss">
+
+<main class="section">
+    <article class="container-group-bars">
+        <div class="bars">
+            <h5 class="title-skill Front-end" data-aos="fade-right" data-aos-delay="200">FrontEnd </h5>
+            <h4 class="value-skill" data-aos="fade-right" data-aos-delay="200">(Excellent)</h4>
+            <progress max="100" value="100" class="Front-End" data-aos="fade-right" data-aos-delay="400"></progress>
+        </div>
+        <div class="bars">
+            <h5 class="title-skill Back-end" data-aos="fade-right" data-aos-delay="400">BackEnd</h5>
+            <h4 class="value-skill" data-aos="fade-right" data-aos-delay="400">(Medium)</h4>
+            <progress max="100" value="50" class="Back-End" data-aos="fade-right" data-aos-delay="500"></progress>
+        </div>
+        <div class="bars">
+            <h5 class="title-skill Hard-Skill" data-aos="fade-right" data-aos-delay="500">HardSkill</h5>
+            <h4 class="value-skill" data-aos="fade-right" data-aos-delay="500">(High)</h4>
+            <progress max="100" value="75" class="Hard-Skill" data-aos="fade-right" data-aos-delay="600"></progress>
+        </div>
+        <div class="bars">
+            <h5 class="title-skill Soft-skill" data-aos="fade-right" data-aos-delay="600">SoftSkill</h5>
+            <h4 class="value-skill" data-aos="fade-right" data-aos-delay="600">(Medium)</h4>
+            <progress max="100" value="50" class="Soft-skill" data-aos="fade-right" data-aos-delay="700"></progress>
+        </div>
+        <div class="bars">
+            <h5 class="title-skill English" data-aos="fade-right" data-aos-delay="700">English</h5>
+            <h4 class="value-skill" data-aos="fade-right" data-aos-delay="700">(Low)</h4>
+            <progress max="100" value="25" class="English" data-aos="fade-right" data-aos-delay="800"></progress>
+        </div>
+    </article>
+    <img class="avatar" src="../../../Assets/person.webp" alt="" data-aos="zoom-in" data-aos-delay="900"  data-aos-duration="3000">
+
+</main>
+<script>
+    AOS.init();
+
+    // Detectar clic en el enlace del <li> con clase "list"
+    const links = document.querySelectorAll(".list a");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.body.classList.add("fadeOutAnimation");
+        // Esperar a que termine la animación antes de redirigir a la página
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 1000); // Ajusta el tiempo según la duración de la animación (en este caso, 1000 ms = 1 segundo)
+      });
+    });
+  </script>

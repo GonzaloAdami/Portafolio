@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* ----------------------------- VARS TEMATHIC -----------------------------*/
+:root{
+
+  
+  /* BG COLORS TEMATHIC*/
+    --bg_java: linear-gradient(to left, #ff4d17, #a76f00);
+    --bg_MySql: linear-gradient(to left, #2eceff, #00403d);
+    --bg_MariaDB: linear-gradient(to left, #f19900, #ab0000); 
+    --bg_ApiRest: linear-gradient(to left, #e4c200, #d0a000);
+    --bg_NodeJS: linear-gradient(to left, #1fb800, #234001); 
+    --bg_JS: linear-gradient(to left, #d7e203, #fd9400);
+    --bg_TS: linear-gradient(to left, #04aecc, #012f58);  
+  
+
+  /* BORDER PROGRESS SIZE*/
+    --borderSize: 1vw;
+  }
+
+/* ----------------------------- CLASS COLORS -----------------------------*/
+.bg-java{
+  background-image: var(--bg_java);
+}
+.bg-MySql{
+   background-image: var(--bg_MySql);
+}
+.bg-MariaDB{
+   background-image: var(--bg_MariaDB);
+}
+.bg-ApiRest{
+   background-image: var(--bg_ApiRest);
+}
+.bg-NodeJS{
+   background-image: var(--bg_NodeJS);
+}
+.bg-JS{
+  background-image: var(--bg_JS);
+}
+.bg-TS{
+  background-image: var(--bg_TS);
+}
+
+/* ------------------------------------ TILE SECTION ---------------------------*/
+.title-back-end{
+  position: relative;
+  color: #dbdbdb;
+  letter-spacing: 1px;
+  font-size: 20vw;
+  left: 20%;
+  font-weight: bold;
+}
+
+/* ----------------------------------- ICON GRID ---------------------------------*/
+.grid-back-end{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1vw;
+}
+
+
+/* ------------------------ CONTAINER ------------------------*/
+  .container{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  
+  /* ----------- ICONS ----------------*/
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 80px;
+    color: #dbdbdbe9;
+    font-size: 15vw;
+    letter-spacing: 1px;  
+    margin-top: 2vh;
+    padding: 5px 0px;
+    
+  }

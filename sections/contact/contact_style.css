@@ -1,0 +1,292 @@
+html{
+    max-height: 20vw;
+    overflow-y: hidden;
+  }
+  
+  body{
+    
+      margin: 0vw;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      max-width: 100vw;
+      user-select: none;
+      overflow-y: hidden;
+  }
+  nav ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #210537;
+    margin: 0vw 5vw;
+  }
+  nav{  
+    position: absolute;
+  }
+  li{
+    display: flex;
+    float: left;
+    font-size: 1.3vw;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    font-weight: bold;
+  }
+  .banner{
+    background: radial-gradient(circle, #ffffff, #10003dcb);
+    height: 50vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0vw;
+    box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+  }
+
+  section{
+    display: flex;
+ 
+  }
+  h2{
+      color: aliceblue;
+      font-size: 2.5vw;
+      padding: 0.5vw 2vw;
+  } 
+  /* Define las animaciones */
+  @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    /* Aplica las animaciones a los elementos */
+    .fade-out {
+      animation: fadeOut 1s ease-in-out;
+      display: none; /* Para ocultar el elemento durante la animación */
+    }
+    
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .a:focus-within + .banner {
+      border-radius: 0vw 0vw 0vw 0vw;
+    }
+    .hr{
+      position: relative;
+      width: 4vw;
+      height: 0.3vw;
+      background-color: #820B79;
+      transition: 0.5s ease;
+    }
+    a{
+        text-decoration: none;
+        color: #210537;
+      }
+      .data{
+        height: 42vw;
+        width: 30vw;
+        background-image: linear-gradient(to left, #340096, #5B005A);
+        margin: 6vw 2vw;
+        border-radius: 3vw;
+      }
+.form{
+background-image: linear-gradient(to right, #340096, #5B005A);
+height: 20vw;
+width: 60vw;
+position: absolute;
+margin: 28vw 35vw;
+border-radius: 3vw;
+
+}
+form{
+    grid: 1;
+    position: absolute;
+    
+}
+img{
+    position: absolute;
+    margin: 7.5vw 35vw;
+    width: 32vw;
+    height:auto;
+}
+h1, h2, h3{
+    color:#3D0082;
+    display: flex;
+    margin: 0;
+    font-weight: bold;
+}
+h1{
+    font-size: 3vw;
+    position: absolute;
+    top: 6vw;
+    left: 35vw;
+}
+h2{
+    font-size: 2.5vw;
+    position: absolute;
+    top: 9vw;
+    left: 33.3vw;
+}
+
+h3{
+    font-size: 2.5vw;
+    position: absolute;
+    top: 12.5vw;
+    left: 35.2vw;
+}
+h4{
+    font-size: 3vw;
+    position: absolute;
+    top: 2vw;
+    left: 53vw;
+    color: #89107F;
+    font-weight: bold;
+}
+h5{
+    font-size: 2.5vw;
+    position: absolute;
+    top: 5vw;
+    left: 53.5vw;
+    color: #89107F;
+    font-weight: bold;
+}
+p{
+    font-size: 1.2vw;
+    color: #DBDBDB;
+    font-weight: bold;
+    opacity: 0.8;
+    margin: 1vw 0vw;
+    letter-spacing: 0.4vw;
+    padding: 0 10vw;
+}
+.dataBox{
+    grid: 1;
+    position: absolute;
+    top: 10vw;
+    left: -6vw;
+    max-height: 10vw;
+}
+.icon{
+  
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
+    background-image: linear-gradient(to right, #00eaffcb, #1e00ffb6);
+    max-width: 23.4vw;
+    padding: 0.5vw 1vw;
+    text-align: center;
+    position: relative; 
+    left: 10.5vw;
+    top: -0.5vw;
+    border-radius: 5vw;
+    transition: 0.5s ease;
+    z-index: 1000;
+}
+
+.email, .coment{
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-weight: bold;
+    position: absolute;
+    left: 5vw;
+    top: 1vw;
+}
+
+.coment{
+    top: 8vw;
+    left: 4.7vw;
+}
+.emailInput{
+    background-color: rgb(213, 213, 213);
+    width: 30vw;
+    height: 2vw;
+    border-radius: 5vw;
+    position: absolute;
+    top: 5vw;
+    left: 3vw;
+    font-size: 1vw;
+    padding: 0vw 1vw;
+    outline: none
+}
+
+.comentInput{
+    background-color: rgb(213, 213, 213);
+    border-radius: 1.5vw;
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+    resize: none;
+    position: absolute;
+    top: 11vw;
+    left: 3vw;
+    outline: none
+}
+label{
+ font-size: 1.3vw;
+}
+input{
+  width: 30vw;
+  height: 2vw;
+  font-size: 1.3vw;
+  border-radius: 5vw;
+  border: none;
+  padding: 0 1vw;
+  outline: none;
+}
+textarea{
+  margin: 0;
+  font-size: 1.3vw;
+ border-radius: 1vw;
+ position: relative;
+ top: -1.5vw;
+ left: 10.3vw;
+ padding: 1vw;
+ resize: none; 
+ outline: none;
+}
+form{
+  display: grid;
+  grid-template-columns: repeat(1, 10vw); /* 5 elementos en una fila */
+  grid-auto-rows: 2.5vw; /* Altura de cada fila */
+  gap: 10px; /* Espacio entre elementos */
+  grid-auto-flow: row; /* Si hay más elementos, se colocarán en nuevas filas */
+  position: relative;
+  left: 3vw;
+  top: 2vw;
+}
+.containerFormInput{
+  display: grid;
+  grid-template-columns: repeat(2, 10vw); /* 5 elementos en una fila */
+  grid-auto-rows: 0vw; /* Altura de cada fila */
+  gap: 10px; /* Espacio entre elementos */
+  grid-auto-flow: row; /* Si hay más elementos, se colocarán en nuevas filas */
+
+}
+.buttonForm{
+  position: relative;
+  top: -1vw;
+  max-width: 10vw;
+  left: 20vw;
+  font-size: 1.5vw;
+  border: none;
+  color: white;
+  background-image: linear-gradient(to right, #00eaff9a, #1e00ffd5);
+  transition: 0.5s ease;
+  
+}
+.buttonForm:active {
+  transform: scale(0.8);
+ }
+label{
+  font-size: 1.3vw;
+  color: #ffffff;
+  font-weight: bold;
+}

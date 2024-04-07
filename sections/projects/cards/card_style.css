@@ -1,0 +1,145 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+.card{
+    box-sizing: border-box;
+    height: 19vw;
+    width: 29vw;
+    background-color: rgb(28, 13, 54);
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 3vw 1vw rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden;
+    transition: 2s ease;
+    margin: 10% auto;
+}
+.card:hover{
+    transform: scale(1) translateY(4vw);
+    height: 15vw;
+}
+.card:hover h5{
+    animation: title 20s ease infinite;
+}
+.card:hover li{
+    display: none;
+}  
+#carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* auto-fit con minmax para ajustar el tamaño de las columnas */
+    gap: 60px; /* Espacio entre las columnas */
+    position: relative;
+    height: 100vh;
+  
+}
+.owl-item{
+    height: 35vw;
+    width: 100vw;
+    padding-top: 5vw;
+}
+.project-photo{
+   
+    height: 15vw;
+    width: 29vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2vw;
+}
+
+/*CARD STYLE*/
+.title{
+    color: #DBDBDB;
+    font-size: 1.3vw; 
+    display: block; 
+    font-weight: bold;
+    max-width: 15vw;
+    border-radius: 0vw 5vw 5vw 0vw;
+    padding: 0vw 1vw;
+}
+.title-card {
+    display: flex;
+    position: relative;
+    color: aliceblue;
+    font-size: 1.5vw;
+    max-width: 70%;
+    padding: 0.5vw 2vw;
+    bottom: 35%;
+    border-radius: 0pc 20px 20px 0px;
+    background-image: linear-gradient(to right,#05134da1, #BA6DC6);
+    transition: transform 0.5s ease; 
+}
+
+.card:hover .title-card {
+    animation: titleCardAnimation 5s ease forwards;
+}
+
+.title-card:not(:hover) {
+    animation: reverseTitleCardAnimation 3s ease forwards;
+}
+
+
+
+@keyframes titleCardAnimation {
+    50% {
+        transform: translateY(70%);
+    }
+    100% {
+        transform: translateX(-100%) translateY(70%);
+    }
+}
+
+@keyframes reverseTitleCardAnimation {
+    0% {
+        transform: translateX(-100%) translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  
+}
+
+.info-card{
+    display: flex;
+    position: relative;
+    top: -10%;
+    padding-left: 15px;
+    max-width: 40vw;
+    color: aliceblue;
+    font-size: 1.6vw;
+}
+
+/* ANIMATION TITLE*/
+@keyframes title{
+    10%{
+     transform: translateY(-2vw);
+    }
+    20%{
+   
+    }
+    30%{
+     transform: translateX(-30vw) translateY(-2vw);
+    
+    }
+    40%{
+   
+    } 
+    80%{
+     transform: translateX(0vw) translateY(0vw);
+    }
+    100%{
+      
+    }
+   }
+
+   a{
+    text-decoration: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+   }
+   

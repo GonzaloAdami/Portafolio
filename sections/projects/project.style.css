@@ -1,0 +1,176 @@
+html{
+  max-height: 100vh;
+  overflow: hidden;
+  max-width: 100vw;
+
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    max-height: 100vh;
+
+}
+
+/*NAV-BAR STYLE*/
+
+nav ul li{
+  text-decoration: none;
+  list-style: none;
+  color: #210537;
+  margin: 0vw 5vw;
+}
+nav{  
+  position: relative;
+}
+
+li{
+  display: flex;
+  float: left;
+  font-size: 1.3vw;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+
+li:hover{
+  opacity: 1;
+  color: rgb(127, 14, 147);
+  cursor: pointer;
+}
+
+li:hover a
+{
+  opacity: 1;
+  color: rgb(127, 14, 147);
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #210537;
+}
+
+.hr{
+  position: relative;
+  width: 4vw;
+  height: 0.3vw;
+  background-color: #820B79;
+  transition: 0.5s ease;
+}
+
+  
+/*SECTION STYLE*/
+.section-cards{
+  display: grid;
+  background: radial-gradient(circle, #ffffff, #10003dcb);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  gap: 2vh;
+}
+/* TITLE STYLE*/
+.title-section{
+  display: flex;
+  position: absolute;
+  font-size: 1.5vw;
+  padding: 5px 30px;
+  left: 0;
+  background-image: linear-gradient(to right,#05134da1, #BA6DC6);
+  border-radius: 0vw 10vw 10vw 0vw;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #dbdbdba8;
+  top: 5vw;
+  
+}
+/* CARDS STYLE*/
+.cards{
+  padding: 0;
+  min-width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+
+/* Estilo para la animación de desvanecimiento */
+.fadeOutAnimation {
+  animation: fadeOut 1s ease-in-out;
+}
+
+
+/* Define las animaciones */
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplica las animaciones a los elementos */
+  .fade-out {
+    animation: fadeOut 1s ease-in-out;
+    display: none; /* Para ocultar el elemento durante la animación */
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .a:focus-within + .banner {
+    border-radius: 0vw 0vw 0vw 0vw;
+  }
+ 
+
+
+@keyframes add{
+  0%{
+    display: none;
+  }
+  10%{
+    transform: translateX(-20vw);
+  }
+  80%{
+    display: block;
+  }
+  100%{
+    transform: translateX(0vw);
+  }
+}
+
+
+
+.tools{
+  display: flex;
+  position: absolute;
+  background-image: linear-gradient(to right,#BA6DC6 , #05134D);
+  width: 80vw;
+  height: 15vh;
+  left: 10%;
+  opacity: 1;
+  bottom: 0;
+  border-radius: 4vw 4vw 0vw 0vw;
+  
+}
+
+object{
+  overflow: hidden;
+  height: 100vh;
+}

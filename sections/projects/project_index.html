@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonzalo Adami</title>
+  <link rel="icon" type="image/x-icon" href="../../Assets/icon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./project.style.css">
+</head>
+<body>
+  <main>
+    
+    <section class="section-cards">
+      <nav data-aos="fade-down" class="nav-bar">
+        <ul> 
+            <li class="list select"><a href="../about/about_index.html">ABOUT</a></li>     
+            <li class="list" tabindex="1"><a href="../projects/project_index.html">PROJECTS<div class="hr"></div></a></li>
+            <li class="list"><a href="../skills/skills_index.html">SKILLS</a></li>
+            <li class="list"><a href="../contact/contact_index.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div data-aos="fade-right" data-aos-duration="3000" class="title-section">PROJECTS</div>
+      <object data="./cards/card_index.html" type="text/html" class="cards"></object>
+      <object data="./tools/tools_index.html" type="text/html" class="tools"></object>
+    </section>
+  </main>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  
+  <script>
+    // Inicializa el carrusel
+    $(document).ready(function(){
+      $("#carousel").owlCarousel({
+        items: 2, // Número de elementos visibles en el carrusel
+        loop: true, // Repetir el carrusel en un bucle
+        autoplay: true, // Reproducir automáticamente el carrusel
+        autoplayTimeout: 3000, // Tiempo de espera entre las transiciones de los elementos (en milisegundos)
+        autoplayHoverPause: true, // Pausar el carrusel al pasar el cursor sobre él
+        responsive: {
+          // Configuraciones específicas para diferentes tamaños de pantalla
+          0: { items: 2 },
+          768: { items: 2 },
+          992: { items: 3 }
+        }
+      });
+    });
+  </script>
+  <script>
+    AOS.init();
+
+    // Detectar clic en el enlace del <li> con clase "list"
+    const links = document.querySelectorAll(".list a");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        // Agregar la clase de animación para desvanecer los elementos
+        document.body.classList.add("fadeOutAnimation");
+
+        // Esperar a que termine la animación antes de redirigir a la página
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 1000); // Ajusta el tiempo según la duración de la animación (en este caso, 1000 ms = 1 segundo)
+      });
+    });
+
+    
+  </script>
+ <script>
+  const card = document.getElementById("valkyrieConnect");
+  const java = document.getElementById("java");
+  const js = document.getElementById("js");
+  const ts = document.getElementById("ts");
+  const zero = document.getElementById("zero");
+
+  let timeoutId; // Variable para almacenar el ID del temporizador
+
+  zero.addEventListener("mouseenter", function() {
+    java.style.display = "block";
+    js.style.display = "block";
+    ts.style.display = "block";
+  });
+
+  card.addEventListener("mouseenter", function() {
+    java.style.transition = "1s ease";
+    java.style.opacity = "0";
+
+    // Establecer el tiempo de espera de 800 milisegundos y guardar el ID del temporizador
+    timeoutId = setTimeout(function() {
+      java.style.display = "none";
+    }, 400);
+  });
+
+  card.addEventListener("mouseleave", function() {
+    // Cancelar el temporizador si se dispara el evento "mouseleave" antes de completar el tiempo de espera
+    clearTimeout(timeoutId);
+
+    java.style.display = "block";
+    java.style.transition = "2s ease";
+    java.style.opacity = "1";
+  });
+</script>
+
+  
+</body>
+</html>

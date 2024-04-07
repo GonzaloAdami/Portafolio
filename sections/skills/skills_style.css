@@ -1,0 +1,127 @@
+/* INICIO */
+ html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background: radial-gradient(circle, #ffffff, #10003dcb);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+/* ---------------------------------- NAV BAR ----------------------------*/
+  nav ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #210537;
+    margin: 0vw 5vw;
+  }
+  nav{  
+    position: relative;
+    
+  }
+  li{
+    display: flex;
+    float: left;
+    font-size: 1.3vw;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    font-weight: bold;
+  }
+
+  .hr{
+    position: relative;
+    width: 4vw;
+    height: 0.3vw;
+    background-color: #820B79;
+    transition: 0.5s ease;
+  }
+
+/* ---------- TITLE SECTION ------- */
+
+.title-section{
+  display: inline-block;
+  position: relative;
+  max-width: 20%;
+
+  padding-left: 15px;
+  background-image: linear-gradient(to right,#05134da1, #BA6DC6);
+  border-radius: 0vw 10vw 10vw 0vw;
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  color: #dbdbdb;
+  
+}
+
+
+/* ---------- HEADER CONTAINER -----*/
+
+.header-container{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 2fr);  
+  grid-auto-rows: 1fr;
+  gap: 4%;
+  left: 5%;
+}
+
+/* ---------- BARS SETTINGS -------*/
+
+.containerBar{
+  padding: 0;
+  margin: 0;
+  height: 25vw; 
+  width: 70vw;
+  border-radius: 120px;
+  background-image: linear-gradient(to right,#BA6DC6 , #05134D);
+}
+
+/* ------------------ FRONT SKILL --------------------------- */
+
+.containerFont{
+  
+  width: 70vw;
+  height: 100vh;
+  background-image: linear-gradient(to right,#BA6DC6 , #05134D);
+  border-radius: 80px 80px 0px 0px;
+  margin-top: 10vh;
+}
+
+/* -------------------- BACKEND SKILL --------------------------- */
+
+.containerBack{
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 60%;
+  top: 0%;
+  border-radius: 5vw;
+  background-image: linear-gradient(to right, #05134D ,#BA6DC6 );
+  padding: 10px 25px;
+  margin-right: 2vw;
+}
+
+
+
+/* -------------------- OBJECT ELEMENT ------------------- */
+
+
+object{
+  overflow: none;
+  display: block;
+}
+
+
+a{
+  text-decoration: none;
+  color: #210537;
+}

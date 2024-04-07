@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ----------------------------- VARS TEMATHIC -----------------------------*/
+:root{
+
+
+/* BG COLORS TEMATHIC*/
+    --bg_Angular: linear-gradient(to left, #ef221e, #660101);
+    --bg_React: linear-gradient(to left, #24b9e7, #00403d);
+
+
+/* BORDER PROGRESS SIZE*/
+    --borderSize: 1vw;
+}
+
+/* ----------------------------- CLASS COLORS -----------------------------*/
+.bg-Angular{
+background-image: var(--bg_Angular);
+}
+.bg-React{
+    background-image: var(--bg_React);
+}
+
+/* ----------------------------- TITLE -------------------------------*/
+.title-front-end{
+    position: relative;
+    left: 40%;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #dbdbdb;
+    display: inline-block;
+  }
+
+/* ----------------------------------- ICON -----------------------------------*/
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 80px;
+    color: #dbdbdbe9;
+    font-size: 2vw;
+    letter-spacing: 1px;  
+    margin-top: 2vh;
+    padding: 5px 20px;
+    
+}
+/* ----------------------------------- GRID ICONS -------------------------------*/
+.grid-back-end{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    margin-left: 20%;
+}
+
+/* ----------------------------------- CONTAINER -------------------------------*/
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,275 @@
+html{
+
+  max-height: 100vh;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+body{
+  
+    margin: 0vw;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+  
+}
+
+
+
+/* NAV */
+
+.nav ul li{  
+  text-decoration: none;
+  list-style: none;
+  color: #210537;
+  margin: 0vw 5vw;
+}
+
+.nav{  
+  position: absolute;
+}
+
+li{
+  display: flex;
+  float: left;
+  font-size: 1.3vw;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  font-weight: bold;
+}
+li:hover{
+  opacity: 1;
+  color: rgb(127, 14, 147);
+  cursor: pointer;
+  }
+  li:hover a{
+    opacity: 1;
+    color: rgb(127, 14, 147);
+    cursor: pointer;
+  }
+/* SECTION BANNER*/
+
+.banner{
+  background: radial-gradient(circle, #ffffff, #10003dcb);
+  height: 100vw;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0vw;
+  box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+/* NAME TITLE H1 AND ABOUT H2*/
+.nameTitle{
+    text-align:left;
+    padding-top: 7vw;
+    padding-left: 6vw;
+    color: #332042;
+    letter-spacing: 2vw;
+    margin: 0vw;
+    font-size: 3vw;
+    font-weight: bold;
+    
+  
+}
+
+.about{
+    padding-left: 6vw;
+    max-width: 40vw;
+    color: #261632;
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+
+
+h2{
+    color: aliceblue;
+    font-size: 2.5vw;
+    padding: 0.5vw 2vw;
+}
+
+.mark{
+
+  position: absolute;
+  bottom: 0vw;
+  right: 5vw;
+  z-index: 10;
+  height: 43vw;
+  width: 35vw;
+ background-image: linear-gradient(to right,#BA6DC6 , #05134D);
+  border-radius: 100vw 100vw 0vw 0vw;
+}
+.room2{
+  width: 55vw;
+  height: auto;
+  z-index: 100;
+  position: relative;
+  left: -13vw;
+  bottom: -7.5vw;
+  
+}
+
+
+
+
+/* Define las animaciones */
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .alfombra{
+    display: none;
+    }
+    .sofa{
+      display: none;
+    }
+    
+  /* Aplica las animaciones a los elementos */
+  .fade-out {
+    animation: fadeOut 1s ease-in-out;
+    display: none; /* Para ocultar el elemento durante la animación */
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .a:focus-within + .banner {
+    border-radius: 0vw 0vw 0vw 0vw;
+  }
+ 
+  .hr{
+    position: absolute;
+    width: 4vw;
+    height: 0.3vw;
+    background-color: #820B79;
+    transition: 0.5s ease;
+  }
+    
+ /* Estilo para la animación de desvanecimiento */
+ .fadeOutAnimation {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+a{
+  text-decoration: none;
+  color: #210537;
+
+}
+@media(max-width:1000px){
+  html{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: #2f054da9;
+    background-size: contain;
+  }
+  .banner{ 
+    margin-top: 0vw;
+    z-index: 1000;
+
+  }
+  .nameTitle{
+    text-align:left;
+    padding-top: 10vw;
+    padding-left: 5%;
+    color: #332042;
+    letter-spacing: 2vw;
+    margin: 0vw;
+    font-size: 5vw;
+    font-weight: bold;
+    
+  
+}
+.about{
+    padding-left: 5%;
+    max-width: 85vw;
+    color: #261632;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+.nameTitle :nth-child(1){
+  display: none;
+}
+  .mark{
+    position: absolute;
+    top: 60vw;
+    left: 8vw;
+    z-index: 10;
+    height: 40vw;
+    width: 32vw;
+   background-image: linear-gradient(to right,#BA6DC6 , #05134D);
+    border-radius: 100vw 100vw 0vw 0vw;
+  }
+  .room2{
+    width: 50vw;
+    height: auto;
+    z-index: 100;
+    position: relative;
+    left: -7vw;
+    top: 12vw;
+    
+  }
+  nav ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #210537;
+    margin: 0vw 5vw;
+  }
+  nav{  
+    position: absolute;
+  }
+  li{
+    position: relative;
+    left: -8vw;
+    display: flex;
+    float: left;
+    font-size:2.3vw;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    font-weight: bold;
+  }
+    h2{
+        color: aliceblue;
+        font-size: 2.5vw;
+        padding: 0.5vw 2vw;
+    }
+    .sofa{
+      width: 50vw;
+      position: absolute;
+      right: -6vw;
+      top: 75vw;
+      z-index: 500;
+      display: block;
+    }
+    .alfombra{
+      position: absolute;
+      width: 80vw;
+      top: 92vw;
+      left: 10vw;
+      display: block;
+    }
+
+}

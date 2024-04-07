@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about_style.css">
+  <title>Gonzalo Adami</title>
+  <link rel="icon" type="image/x-icon" href="../../Assets/icon.ico">
+</head>
+<body data-basepath="../../Assets/">
+
+  <header>
+    <nav data-aos="fade-down" class="nav">
+      <ul> 
+        <li><a href="about_index.html">ABOUT<div class="hr"></div></a></li>
+        <li><a href="../projects/project_index.html">PROJECTS</a></li>
+        <li><a href="../skills/skills_index.html">SKILLS</a></li>
+        <li><a href="../contact/contact_index.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="banner">
+      <div 
+        class="mark" 
+        data-aos="zoom-in-up" 
+        data-aos-duration="2000"
+      >
+
+        <img 
+          src=""
+          data-src="person.webp" 
+          alt="Person Image" 
+          class="room2" 
+          data-aos-duration="3000"
+        >
+      </div>
+      <div 
+        class="text" 
+        data-aos="fade-right"
+      >
+
+        <h1 
+          class="nameTitle"
+          data-aos="fade-right" 
+          data-aos-offset="300" 
+          data-aos-easing="ease-in-sine" 
+          data-aos-duration="1000"
+        >
+            GONZALO <br> EZEQUIEL <br> ADAMI
+        </h1>
+
+        <h2 
+          class="about"
+          data-aos="fade-right" 
+          data-aos-offset="300" 
+          data-aos-easing="ease-in-sine" 
+          data-aos-duration="1000"
+        >
+          Allow me to introduce myself, I am Gonzalo Ezequiel Adami, a Full Stack programmer. I have extensive experience in developing high-quality personal projects in my free time, which I have showcased through my portfolio. In addition, I possess a strong theoretical knowledge in soft skills such as problem-solving, teamwork, and effective communication, as well as proficient hard skills.
+        </h2>
+      </div>
+      <img 
+        data-src="img_about/sofa.webp" 
+        alt="Sofa Image" 
+        class="sofa"
+        alt="sofa"
+      >
+      <img 
+        src=""
+        data-src="img_about/alfombra.webp" 
+        alt="Carpet Image" 
+        class="alfombra"
+        alt="alfombra"
+      >
+    </section>
+  </main>
+
+ 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const basePath = document.body.getAttribute('data-basepath');
+      const images = document.querySelectorAll('img[data-src]');
+  
+      images.forEach(image => {
+        const src = basePath + image.getAttribute('data-src');
+        image.setAttribute('src', src);
+      });
+    });
+  
+    AOS.init();
+  
+    // Detectar clic en el enlace del <li> con clase "list"
+    const links = document.querySelectorAll("nav ul li a");
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.body.classList.add("fadeOutAnimation");
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 1000);
+      });
+    });
+  </script>
+  
+</body>
+</html>
